@@ -10,6 +10,7 @@ import Architecture from "@/pages/architecture";
 import ApiDocs from "@/pages/api-docs";
 import Performance from "@/pages/performance";
 import Caching from "@/pages/caching";
+import UmlDiagram from "@/pages/uml";
 
 function Router() {
   return (
@@ -21,6 +22,7 @@ function Router() {
       <Route path="/api-docs" component={ApiDocs} />
       <Route path="/performance" component={Performance} />
       <Route path="/caching" component={Caching} />
+      <Route path="/uml" component={UmlDiagram} />
       {/* Fallback to 404 */}
       <Route component={NotFound} />
     </Switch>
